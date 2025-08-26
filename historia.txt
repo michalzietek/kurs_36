@@ -1,0 +1,136 @@
+commit a4b293ab7fc874a77f1e22222777fddf9df96653
+Author: michalzietkowski <michalzietkowski>
+Date:   Tue Jun 17 18:58:16 2025 +0200
+
+    Reapply "dodanie przepisu na pierogi z miesem i modyfikacja przepisu na pierogi z jagodami"
+    
+    This reverts commit ec9567a86bf0dfef35c50d85e79d44678abe3ecc.
+
+diff --git a/przepis_na_pierogi_z_jagodami.txt b/przepis_na_pierogi_z_jagodami.txt
+index fb33cba..cffcc8e 100644
+--- a/przepis_na_pierogi_z_jagodami.txt
++++ b/przepis_na_pierogi_z_jagodami.txt
+@@ -4,3 +4,6 @@ Składniki:
+dcaDfa sRFG sr
+ 100 ml mleka
+ 300g cukru
+ 500g jagód
++
++Sposób przygotowania:
++1. Mąkę wyrobić z jajkami i mlekiem
+diff --git a/przepis_na_pierogi_z_miesem.txt b/przepis_na_pierogi_z_miesem.txt
+new file mode 100644
+index 0000000..0e23c14
+--- /dev/null
++++ b/przepis_na_pierogi_z_miesem.txt
+@@ -0,0 +1,4 @@
++Lista składników:
++1000g mąki
++2 jajka
++2000 g mięsa z kurczaka
+
+commit ec9567a86bf0dfef35c50d85e79d44678abe3ecc
+Author: michalzietkowski <michalzietkowski>
+Date:   Tue Jun 17 18:56:37 2025 +0200
+
+    Revert "dodanie przepisu na pierogi z miesem i modyfikacja przepisu na pierogi z jagodami"
+    
+    This reverts commit bf4577c2b1363f1b1f5d37f457792c3aebef73d2.
+
+diff --git a/przepis_na_pierogi_z_jagodami.txt b/przepis_na_pierogi_z_jagodami.txt
+index cffcc8e..fb33cba 100644
+--- a/przepis_na_pierogi_z_jagodami.txt
++++ b/przepis_na_pierogi_z_jagodami.txt
+@@ -4,6 +4,3 @@ Składniki:
+ 100 ml mleka
+ 300g cukru
+ 500g jagód
+-
+-Sposób przygotowania:
+-1. Mąkę wyrobić z jajkami i mlekiem
+diff --git a/przepis_na_pierogi_z_miesem.txt b/przepis_na_pierogi_z_miesem.txt
+deleted file mode 100644
+index 0e23c14..0000000
+--- a/przepis_na_pierogi_z_miesem.txt
++++ /dev/null
+@@ -1,4 +0,0 @@
+-Lista składników:
+-1000g mąki
+-2 jajka
+-2000 g mięsa z kurczaka
+
+commit bf4577c2b1363f1b1f5d37f457792c3aebef73d2
+Author: michalzietkowski <michalzietkowski>
+Date:   Tue Jun 17 18:54:52 2025 +0200
+
+    dodanie przepisu na pierogi z miesem i modyfikacja przepisu na pierogi z jagodami
+
+diff --git a/przepis_na_pierogi_z_jagodami.txt b/przepis_na_pierogi_z_jagodami.txt
+index fb33cba..cffcc8e 100644
+--- a/przepis_na_pierogi_z_jagodami.txt
++++ b/przepis_na_pierogi_z_jagodami.txt
+@@ -4,3 +4,6 @@ Składniki:
+ 100 ml mleka
+ 300g cukru
+ 500g jagód
++
++Sposób przygotowania:
++1. Mąkę wyrobić z jajkami i mlekiem
+diff --git a/przepis_na_pierogi_z_miesem.txt b/przepis_na_pierogi_z_miesem.txt
+new file mode 100644
+index 0000000..0e23c14
+--- /dev/null
++++ b/przepis_na_pierogi_z_miesem.txt
+@@ -0,0 +1,4 @@
++Lista składników:
++1000g mąki
++2 jajka
++2000 g mięsa z kurczaka
+
+commit 331dd757df8dd3e80f444a95309cb8d23de6684e
+Author: michalzietkowski <michalzietkowski>
+Date:   Tue Jun 17 18:49:23 2025 +0200
+
+    dodanie pierwszej wersji przepisu na pierogi'
+    :
+
+diff --git a/przepis_na_pierogi_z_jagodami.txt b/przepis_na_pierogi_z_jagodami.txt
+new file mode 100644
+index 0000000..fb33cba
+--- /dev/null
++++ b/przepis_na_pierogi_z_jagodami.txt
+@@ -0,0 +1,6 @@
++Składniki:
++200g mąki
++2 jajka
++100 ml mleka
++300g cukru
++500g jagód
+
+commit 6ad3c9fdeaeab0e07f136f3004b55d06176792fa
+Author: michalzietkowski <michalzietkowski>
+Date:   Tue Jun 17 18:46:25 2025 +0200
+
+    dodano rzeczy do drugiego commita
+
+diff --git a/pierwszy_plik.txt b/pierwszy_plik.txt
+index 3ae1bb0..905019f 100644
+--- a/pierwszy_plik.txt
++++ b/pierwszy_plik.txt
+@@ -1 +1 @@
+-Cześć Wam wszystkim!!!
++Cześć Wam wszystkim!!! To bedzie nasz drugi commit
+
+commit 984ec7d6c48a17ffc907df23ef26783543f252fc
+Author: michalzietkowski <michalzietkowski>
+Date:   Tue Jun 17 18:41:07 2025 +0200
+
+    stworzenie pierwszego pliku
+
+diff --git a/pierwszy_plik.txt b/pierwszy_plik.txt
+new file mode 100644
+index 0000000..3ae1bb0
+--- /dev/null
++++ b/pierwszy_plik.txt
+@@ -0,0 +1 @@
++Cześć Wam wszystkim!!!
