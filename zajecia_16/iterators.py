@@ -54,6 +54,7 @@ lista_uczniow = ["Jan", "Anna", "Piotr", "Kazimierz"]
 
 lista_uczniow = ["Jan", "Anna", "Piotr", "Kazimierz"]
 
+
 class MyIterator2:
     def __init__(self, data):
         self.data = data
@@ -67,6 +68,7 @@ class MyIterator2:
             result = self.data[self.index]
             self.index += 1
             return result
+
 
 iterator_v2 = MyIterator2(lista_uczniow)
 print(next(iterator_v2))

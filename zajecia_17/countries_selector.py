@@ -40,6 +40,7 @@ def get_data_from_countries_api(country_name):
     else:
         print("Niestety taki kraj nie istnieje.")
 
+
 def modify_data_from_api_to_our_dict(response_data):
     if not response_data:
         return {}
@@ -52,10 +53,16 @@ def modify_data_from_api_to_our_dict(response_data):
         "subregion": country_info.get("subregion", "N/A"),
         "population": country_info.get("population", "N/A"),
         "languages": ", ".join(country_info.get("languages", {}).values()),
-        "currency": ", ".join([f"{v['name']} ({k})" for k, v in country_info.get("currencies", {}).items()]),
-        "flag": country_info.get("flags", {}).get("svg", "N/A")
+        "currency": ", ".join(
+            [
+                f"{v['name']} ({k})"
+                for k, v in country_info.get("currencies", {}).items()
+            ]
+        ),
+        "flag": country_info.get("flags", {}).get("svg", "N/A"),
     }
     return result
+
 
 file_handler = CountriesSelector(file_path="data.json")
 # user_country = input("Enter country name: ")
@@ -76,15 +83,15 @@ if country_data := file_handler.lookup_for_country_in_data(country_data):
 
 # print(file_handler["Poland"])
 file_handler["Austria"] = {
-        "full_name": "Austria",
-        "capital": "Wieden",
-        "region": "Europe",
-        "subregion": "Central Europe",
-        "population": 20353442,
-        "languages": "Austian",
-        "currency": "Euro (EUR)",
-        "flag": "https://flagcdn.com/at.svg"
-    }
+    "full_name": "Austria",
+    "capital": "Wieden",
+    "region": "Europe",
+    "subregion": "Central Europe",
+    "population": 20353442,
+    "languages": "Austian",
+    "currency": "Euro (EUR)",
+    "flag": "https://flagcdn.com/at.svg",
+}
 print(file_handler.data)
 
 for country in file_handler:
@@ -94,4 +101,3 @@ my_generator = file_handler.items()
 
 for pair in my_generator:
     print(pair)
-

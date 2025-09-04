@@ -1,5 +1,6 @@
 import json
 
+
 class WeatherForecast:
     def __init__(self, file_path):
         self.file_path = file_path
@@ -10,7 +11,7 @@ class WeatherForecast:
             return json.load(file)
 
     def write_weather_data(self):
-        with open(self.file_path, 'w') as file:
+        with open(self.file_path, "w") as file:
             file.write(json.dumps(self.weather_data))
 
     def __getitem__(self, item):
@@ -20,7 +21,7 @@ class WeatherForecast:
         self.weather_data[key] = value
 
 
-weather_forecast = WeatherForecast('example_1.json')
+weather_forecast = WeatherForecast("example_1.json")
 print(weather_forecast["2025-08-07"])
 
 weather_forecast["2025-08-21"] = "Nie pada"
