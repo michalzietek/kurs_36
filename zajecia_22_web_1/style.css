@@ -1,0 +1,31 @@
+body {
+    background-color: aqua;
+    font-family: "DejaVu Sans Mono";
+}
+
+h1 {
+    color: sandybrown;
+    font-size: 10vh;
+    margin: 100px 50px 75px 0px;
+}
+
+table {
+    width: 100%;
+    border: 3px black solid;
+}
+td {
+    border: 1px black dotted;
+    text-align: center;
+}
+
+th {
+    border: 1px black solid;
+}
+
+#pierwszy_tytul {
+    color: crimson;
+}
+
+.nasz_header {
+    color: rebeccapurple;
+}

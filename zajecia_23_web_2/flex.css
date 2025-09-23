@@ -1,0 +1,13 @@
+.flex-container{
+    display: flex;
+    background-color: crimson;
+    justify-content: space-around;
+    width: 50%;
+}
+
+
+.box{
+    background-color: aqua;
+    padding: 20px;
+    margin: 20px;
+}
