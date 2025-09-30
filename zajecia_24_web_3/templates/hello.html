@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% if imie %}
+  <h1>Hello {{ imie }}</h1>
+  {% else %}
+  <h1>Witaj nieznajomy</h1>
+  {% endif %}
+{% endblock %}
+
+
+{% block stopka %}
+<h2>To jest moja tylko i wyłącznie stopka</h2>
+{% endblock %}

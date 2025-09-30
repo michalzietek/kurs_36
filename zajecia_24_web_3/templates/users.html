@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <table>
+    <tr>
+      <th>Imie</th>
+      <th>Nazwisko</th>
+      <th>Email</th>
+    </tr>
+    {% for user in users %}
+    <tr>
+      <td>{{ user.name }}</td>
+      <td>{{ user.surname }}</td>
+      <td>{{ user.email }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  <h1>{{ superuser.suername }}</h1>
+
+  <form method="post">
+    <label for="name">Name: </label>
+    <input type="text" id="name" name="name">
+    <label for="surname">Surname: </label>
+    <input type="text" id="surname" name="surname">
+    <label for="adres_email">Email: </label>
+    <input type="email" id="adres_email" name="email">
+    <input type="hidden" name="form_type" value="formularz_1">
+    <button type="submit">Dodaj użytkownika</button>
+  </form>
+
+
+{% endblock %}
